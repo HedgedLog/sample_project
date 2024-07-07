@@ -1,0 +1,67 @@
+
+echo, mkdir, cd
+
+ - These commands are typically referred to as "shell commands" or "command-line commands." 
+
+ - When you use Git commands like git init, git add, git commit, etc., you're indeed running these commands in a shell or command-line interface (CLI). 
+ Git itself is a command-line tool designed for version control, and it provides a set of commands that you can use to manage and track changes in your project's files.|
+
+ - When you install npm (Node Package Manager) and NVM (Node Version Manager) on your system, they do add their respective commands to the shell environment.
+
+
+git init
+
+ - When you use git init in a directory on your computer, you are essentially initializing that directory as a Git repository. 
+ This means you are setting up the necessary files and directories that Git uses to track changes, manage versions, and maintain the history of your project's files.
+
+
+git status
+
+ - The git status command is your go-to tool for checking the current state of your Git repository. Checking Changes and Tracking Progress.
+
+
+git add (to STAGE)
+
+ - The git add command is used to stage changes for the next commit. 
+ Staging means preparing files to be included in the next snapshot (commit) of the project's history.
+
+ - git add file1.txt       
+	- # Add a specific file
+
+ - git add directory/      
+	- # Add all files in a directory
+
+ - git add .
+	- The dot (.) notation tells Git to add all changes in the current directory and its subdirectories to the staging area. 
+	This includes both modified files and new untracked files.	
+
+ - git add --all
+	- The --all flag achieves the same result as git add ., adding all changes to the staging area	
+
+git reset (to UNSTAGE)
+
+ - git reset HEAD <file>
+	- git reset HEAD file1.txt   # Unstage file1.txt
+	- This command unstages <file> (removes it from the staging area), but keeps your modifications in the working directory.
+
+ - git reset HEAD
+	 - This command unstages all files that were previously added with git add, but keeps your modifications in the working directory.
+
+
+git commit
+
+ - git commit -m "Your commit message here"
+	- When you run git commit, Git takes all staged changes and creates a new commit (or snapshot) in the repository's history.
+	- Each commit is identified by a unique SHA-1 hash and includes the author's name, email, timestamp, and the commit message provided.
+
+
+git remote -v
+
+ - Used to view the list of remote repositories associated with your local Git repository, along with their URLs.
+
+git remote add origin <remote repo url>
+
+ - used in Git to set up a new remote repository for your local Git project.
+
+
+
